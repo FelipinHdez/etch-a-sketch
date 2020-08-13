@@ -11,6 +11,7 @@ resetButton.addEventListener('click', reset);
 
 let color = '#000000'
 let gridSize = 16;
+let animationLimit = 40;
 
 setSquares(gridSize);
 
@@ -23,7 +24,7 @@ function setSquares(squareNumber){
         square.classList.add('grid-element');
         square.addEventListener('mouseover', changeColor);
 
-        if (squareNumber <= 40){
+        if (squareNumber <= animationLimit){
             square.addEventListener('transitionend', removeBorder);
             setTimeout(() => {
                 square.classList.add('border');},
