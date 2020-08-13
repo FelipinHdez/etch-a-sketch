@@ -37,8 +37,8 @@ function setSquares(squareNumber){
 }
 
 function setSize(){
-    let newSize = Number(window.prompt('Enter sketch size: (maximum is 50 x 50)', '16'));
-    if (newSize < 1 || newSize > 50) return;
+    let newSize = Number(window.prompt('Enter sketch size: (maximum is 100 x 100)', '16'));
+    if (newSize < 1 || newSize >= 100) return;
     gridSize = newSize
     reset();
 }
