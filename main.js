@@ -38,8 +38,8 @@ function setSquares(squareNumber){
 }
 
 function setSize(){
-    let newSize = Number(window.prompt('Enter sketch size: (maximum is 200 x 200)', '16'));
-    if (newSize < 1 || newSize > 200) return;
+    let newSize = Number(window.prompt('Enter sketch size: (maximum is 100 x 100)', '16'));
+    if (newSize < 1 || newSize > 100) return;
     gridSize = newSize
     reset();
 }
